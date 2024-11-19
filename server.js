@@ -7,8 +7,8 @@ const User = require('./models/User'); // We’ll create this model next
 const app = express();
 app.use(express.json());
 
-// MongoDB URI (for local MongoDB use "mongodb://localhost:27017/groceryDB")
-const mongoURI = 'mongodb://localhost:27017/groceryDB';
+
+const mongoURI = 'mongodb+srv://Akshay:Akshay%40123@cluster0.hnc1y.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('MongoDB connected successfully'))
